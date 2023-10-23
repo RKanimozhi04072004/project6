@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="\admin\index.html">Home page</a>
+    <a href="\admin_login\index.html">admin login</a>
+    <a href="\Book rooms\index.html">Book rooms</a>
+    <a href="\add rooms\index.html">Add rooms</a>
+    <a href="\contact\index.html">contact</a>
+    <form action="\add rooms\index.html">
+    
+    <div class="admin">
+        <div class="name">
+            <label for="name">Enter name</label>
+            <input type="text" id="name" placeholder="Enter name" required>
+            <label for="password" >Password</label>
+            <input type="password" id="password" placeholder="password" minlength="8" required>
+            <img src="eye.png" id="eyeicon">
+            <button id="btn" type="submit" onclick="submit()">login</button>
+        </div>
+    </div>
+</form>
+    <script>
+         let eyeicon=document.getElementById("eyeicon");
+        let Password=document.getElementById("password");
+        eyeicon.onclick=function(){
+            if(password.type=="password"){
+                password.type="text";
+            }else{
+                password.type="password";
+            }
+        }
+        let button=document.getElementById('btn');
+        button.addEventListener('click',submit)
+        function submit(){
+           let doc = prompt("Hii","success");
+           if(doc!==null){
+            document.getElementById('btn').innerHTML=doc; 
+            }
+        }
+    </script>
+
+
+</body>
+</html>
